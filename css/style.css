@@ -1,0 +1,32 @@
+html {
+    font-family: 'starjedi' ;
+}
+
+body {
+    background-color: black;
+}
+
+.headline__top, .headline__middle,
+.headline__bottom {
+    font-family: 'star jedi hollow';
+    color: yellow;
+    font-size: 2.8125rem;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.headline__middle {
+    font-size: 4.25rem;
+}
+
+a {
+    font-family: 'starjedi';
+    color: yellow;
+    font-size: 1.25rem;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
