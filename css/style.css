@@ -1,9 +1,13 @@
 html {
-    font-family: 'starjedi' ;
+    font-family: 'star jedi' ;
 }
 
 body {
     background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .headline__top, .headline__middle,
@@ -21,12 +25,22 @@ body {
     font-size: 4.25rem;
 }
 
-a {
-    font-family: 'starjedi';
-    color: yellow;
-    font-size: 1.25rem;
+nav {
     display: flex;
-    text-decoration: none;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
+
+a {
+    font-family: 'star jedi';
+    color: yellow;
+    font-size: 1.25rem;
+    text-decoration: none;
+    margin: 0 0.625rem; /* Adjust margin as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+    
