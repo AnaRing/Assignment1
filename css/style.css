@@ -10,6 +10,8 @@ body {
     flex-direction: column;
 }
 
+/* styles for the headline */
+
 .headline__top, .headline__middle,
 .headline__bottom {
     font-family: 'star jedi hollow';
@@ -25,6 +27,8 @@ body {
     font-size: 4.25rem;
 }
 
+
+ /* styles for the navigation links */
 nav {
     display: flex;
     flex-direction: row;
@@ -37,10 +41,38 @@ a {
     color: yellow;
     font-size: 1.25rem;
     text-decoration: none;
-    margin: 0 0.625rem; /* Adjust margin as needed */
+    margin: 1.25rem 0.625rem; /* Adjust margin as needed */
     display: flex;
     align-items: center;
     justify-content: center;
     white-space: nowrap;
+    /* position: relative;
+    overflow: hidden; */
   }
+
+a:hover {
+    color: white;
+}
+
+/* styles for a possible shooting star effect */
+
+/* a::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    background-color: white;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+a:hover::before {
+    top: 50%;
+    opacity: 1;
+    transform: translateX(-50%) rotate(45deg);
+    transition: opacity 0.3s, transform 0.3s;
+} */
     
