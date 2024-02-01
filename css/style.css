@@ -76,3 +76,37 @@ a:hover::before {
     transition: opacity 0.3s, transform 0.3s;
 } */
     
+
+/* character site styles */
+
+h1 {
+    text-align: center;
+    color: yellow;
+}
+
+.heading {
+    border: 0.125rem solid white;
+    display: flex;
+    height: 3.125rem;
+}
+
+.record__gender, .record__species, 
+.record__haircolor, .record__eyecolor {
+    flex-basis: 10%;
+}
+
+.record__name, .record__films,
+.record__picture {
+    flex-basis: 20%;
+}
+
+.heading span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-size: 1.25em;
+    color: white;
+}
