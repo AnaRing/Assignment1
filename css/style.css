@@ -54,6 +54,18 @@ a:hover {
     color: white;
 }
 
+.info__box__container {
+    margin-top: 1.25rem;
+    background-color: azure;
+    height: 8.125rem;
+    border-radius: 1.25rem;
+}
+
+.info__box__text {
+    margin-left: 1.25rem;
+    margin-top: 1.25rem;
+}
+
 /* styles for a possible shooting star effect */
 
 /* a::before {
