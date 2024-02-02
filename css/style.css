@@ -88,6 +88,9 @@ h1 {
     border: 0.125rem solid white;
     display: flex;
     height: 3.125rem;
+    font-size: 1.875rem;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
 }
 
 .record__gender, .record__species, 
