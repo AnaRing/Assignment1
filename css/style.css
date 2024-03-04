@@ -147,16 +147,22 @@ span {
 
 /* movies styles */
 
-.record__title, .movie__Title,
+.record__title, .movie__Title {
+    flex-basis: 25%;
+}
+
 .record__director, .movie__Director,
 .record__producer, .movie__Producer,
-.record__release, .movie__Release-date,
 .record__picture, .movie__Cover {
     flex-basis: 20%;
 }
 
-.record__episode, .move__Episode {
+.record__release, .movie__Release-date {
     flex-basis: 10%;
+}
+
+.record__episode, .move__Episode {
+    flex-basis: 5%;
 }
 
 
