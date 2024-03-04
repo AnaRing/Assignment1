@@ -97,7 +97,6 @@ h1 {
 .main__container {
     border-radius: 0.325rem;
     background-color: white;
-    width: 90%;
 }
 
 ul{
@@ -163,6 +162,30 @@ span {
 
 .record__episode, .move__Episode {
     flex-basis: 5%;
+}
+
+/* planets styles */
+
+.record__planet, .planet__Name {
+    flex-basis: 20%;
+}
+
+.record__climate, .planet__Climate,
+.record__terrain, .planet__Terrain,
+.record__diameter, .planet__Size {
+    flex-basis: 15%;
+}
+
+.record__orbit, .planet__Orbit{
+    flex-basis: 10%;
+}
+
+.record__rotation, .planet__Rotation {
+    flex-basis: 5%;
+}
+
+.record__picture, .planet__Image {
+    flex-basis: 20%;
 }
 
 
