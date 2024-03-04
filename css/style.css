@@ -112,6 +112,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0.125rem;
 }
 
 span {
@@ -188,6 +189,23 @@ span {
     flex-basis: 20%;
 }
 
+/* vehicles/starship styles */
+
+.record__name, .vehicle__Name,
+.record__manufacturer, .vehicle__Manufacturer {
+    flex-basis: 15%;
+}
+
+.record__model, .vehicle__Model,
+.record__length, .vehicle__Length,
+.record__crew, .vehicle__Crew,
+.record__passengers, .vehicle__Passengers {
+    flex-basis: 10%;
+}
+
+.record__picture, .vehicle__Image {
+    flex-basis: 20%;
+}
 
 /* created elements styles */
 
@@ -200,4 +218,6 @@ span {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    margin: 0.0125rem;
 }
