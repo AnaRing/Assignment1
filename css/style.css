@@ -109,7 +109,6 @@ h1 {
 }
 
 .heading {
-    border: 0.125rem solid white;
     display: flex;
     height: 3.125rem;
     font-size: 1.875rem;
@@ -117,14 +116,24 @@ h1 {
     margin-bottom: 3.125rem;
 }
 
-.record__gender, .record__species, 
-.record__haircolor, .record__eyecolor {
-    flex-basis: 10%;
+.record__header {
+    font-size: 1.875rem;
 }
 
-.record__name, .record__films,
-.record__picture {
+.record__gender, .record__species, 
+.record__skincolor, .record__name, .record__height
+.character__Name, .character__Gender, .character__Species,
+.character__Skincolor, .character__Height {
+    flex-basis: 16%;
+}
+
+.record__picture, .character__Picture {
     flex-basis: 20%;
+}
+
+.main__container {
+    border: 0.125rem solid black;
+    background-color: white;
 }
 
 .heading span {
@@ -134,6 +143,19 @@ h1 {
 }
 
 span {
+    text-transform: lowercase;
     font-size: 1.25em;
-    color: white;
+    color: black;
+}
+
+.created__Li {
+    border: 0.125rem solid black;
+    display: flex;
+}
+
+.created__Li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }

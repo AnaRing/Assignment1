@@ -4,8 +4,8 @@ const fetchUsers = async () => {
     fetch('https://swapi.dev/api/people/')
     .then(response => response.json())
     .then(data => console.log(data))
-} */
-
+}
+ */
 
 
 /* const ul = document.querySelector('ul');
