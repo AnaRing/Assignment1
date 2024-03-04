@@ -18,6 +18,7 @@ function renderData(characters){
         const characterName = document.createElement('span');
         const characterGender = document.createElement('span');
         const characterHeight = document.createElement('span');
+        const characterHairColor = document.createElement('span');
         const characterSkinColor = document.createElement('span');
         const characterPicture = document.createElement('span');
         const characterImage = document.createElement('img');
@@ -28,6 +29,7 @@ function renderData(characters){
         li.appendChild(characterGender);
         li.appendChild(characterHeight);
         li.appendChild(characterSkinColor);
+        li.appendChild(characterHairColor);
         li.appendChild(characterPicture);
 
         // making content
@@ -35,6 +37,7 @@ function renderData(characters){
         characterGender.textContent = character.gender;
         characterHeight.textContent = character.height;
         characterSkinColor.textContent = character.skin_color;
+        characterHairColor.textContent = character.hair_color;
         /* characterPicture.src =  */
 
         // adding classes to elements
@@ -42,6 +45,7 @@ function renderData(characters){
         characterName.classList.add('character__Name');
         characterGender.classList.add('character__Gender');
         characterHeight.classList.add('character__Height');
+        characterHairColor.classList.add('character__Hair-Color');
         characterSkinColor.classList.add('character__Skin-Color');
         characterPicture.classList.add('character__Picture');
 
