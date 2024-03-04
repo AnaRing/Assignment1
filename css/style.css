@@ -133,9 +133,10 @@ span {
     flex-basis: 25%;
 }
 
+.record__haircolor, .character__Hair-Color,
 .record__gender, .record__skincolor,
 .character__Gender, .character__Skin-Color{
-    flex-basis: 20%;
+    flex-basis: 13%;
 }
 
 .record__heigth, .character__Height{
