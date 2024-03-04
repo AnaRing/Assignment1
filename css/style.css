@@ -97,6 +97,7 @@ h1 {
 .main__container {
     border-radius: 0.325rem;
     background-color: white;
+    width: 100%;
 }
 
 ul{
