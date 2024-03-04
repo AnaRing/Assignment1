@@ -30,6 +30,7 @@ function renderData(characters){
         li.appendChild(characterHeight);
         li.appendChild(characterHairColor);
         li.appendChild(characterSkinColor);
+        li.appendChild(characterHairColor);
         li.appendChild(characterPicture);
 
         // making content
@@ -38,6 +39,7 @@ function renderData(characters){
         characterHeight.textContent = character.height;
         characterSkinColor.textContent = character.hair_color;
         characterSkinColor.textContent = character.skin_color;
+        characterHairColor.textContent = character.hair_color;
         /* characterPicture.src =  */
 
         // adding classes to elements
