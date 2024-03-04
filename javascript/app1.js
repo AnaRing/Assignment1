@@ -1,49 +1,55 @@
 // asynch fetch
-const fetchCharacters = async()=> {
-    const response = await fetch('https://swapi.dev/api/people/');
+const fetchMovies = async()=> {
+    const response = await fetch('https://swapi.dev/api/films/');
     const result = await response.json();
     renderData(result.results);
 }  
 
-fetchCharacters();
+fetchMovies();
 
-function renderData(characters){
+function renderData(movies){
+    // sorting movies on episode id
+    movies.sort((a, b) => a.episode_id - b.episode_id);
     const ul = document.querySelector('.main__container');
     document.body.appendChild(ul);
 
-    characters.forEach(character => {
-        console.log(character);
+    movies.forEach(movie => {
+        console.log(movie);
         // create elements
         const li = document.createElement('li'); 
-        const characterName = document.createElement('span');
-        const characterGender = document.createElement('span');
-        const characterHeight = document.createElement('span');
-        const characterSkinColor = document.createElement('span');
-        const characterPicture = document.createElement('span');
-        const characterImage = document.createElement('img');
+        const movieTitle = document.createElement('span');
+        const movieEpisode = document.createElement('span');
+        const movieDirector = document.createElement('span');
+        const movieProducer = document.createElement('span');
+        const movieRelease = document.createElement('span');
+        const movieCover = document.createElement('span');
+        const movieImage = document.createElement('img');
 
         // append elements
         ul.append(li);
-        li.appendChild(characterName);
-        li.appendChild(characterGender);
-        li.appendChild(characterHeight);
-        li.appendChild(characterSkinColor);
-        li.appendChild(characterPicture);
+        li.appendChild(movieTitle);
+        li.appendChild(movieEpisode);
+        li.appendChild(movieDirector);
+        li.appendChild(movieProducer);
+        li.appendChild(movieRelease);
+        li.appendChild(movieCover);
 
         // making content
-        characterName.textContent = character.name;
-        characterGender.textContent = character.gender;
-        characterHeight.textContent = character.height;
-        characterSkinColor.textContent = character.skin_color;
-        /* characterPicture.src =  */
+        movieTitle.textContent = movie.title;
+        movieEpisode.textContent = movie.episode_id;
+        movieDirector.textContent = movie.director;
+        movieProducer.textContent = movie.producer;
+        movieRelease.textContent = movie.release_date;
+        /* movieCover.src =  */
 
         // adding classes to elements
         li.classList.add('created__Li');
-        characterName.classList.add('character__Name');
-        characterGender.classList.add('character__Gender');
-        characterHeight.classList.add('character__Height');
-        characterSkinColor.classList.add('character__Skin-Color');
-        characterPicture.classList.add('character__Picture');
+        movieTitle.classList.add('movie__Title');
+        movieEpisode.classList.add('movie__Episode');
+        movieDirector.classList.add('movie__Director');
+        movieProducer.classList.add('movie__Producer');
+        movieRelease.classList.add('movie__Release-date');
+        movieCover.classList.add('movie__Cover');
 
     });
 }

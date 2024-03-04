@@ -92,7 +92,7 @@ h1 {
     margin-bottom: 3.125rem;
 }
 
-/* list header & span styles */
+/* list styles */
 
 .main__container {
     border-radius: 0.325rem;
@@ -126,12 +126,14 @@ span {
     border: 0.125rem solid white;
 }
 
+/* character content styles */
+
 .record__name, .character__Name {
     flex-basis: 25%;
 }
 
 .record__gender, .record__skincolor,
-.character__Gender, .character__Skincolor{
+.character__Gender, .character__Skin-Color{
     flex-basis: 20%;
 }
 
@@ -142,6 +144,22 @@ span {
 .record__picture, .character__Picture {
     flex-basis: 25%;
 }
+
+/* movies styles */
+
+.record__title, .movie__Title,
+.record__director, .movie__Director,
+.record__producer, .movie__Producer,
+.record__release, .movie__Release-date,
+.record__picture, .movie__Cover {
+    flex-basis: 20%;
+}
+
+.record__episode, .move__Episode {
+    flex-basis: 10%;
+}
+
+
 /* created elements styles */
 
 .created__Li {
