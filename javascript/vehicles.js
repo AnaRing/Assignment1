@@ -23,7 +23,6 @@ function renderData(vehicles){
         const li = document.createElement('li'); 
         const vehicleName = document.createElement('span');
         const vehicleModel = document.createElement('span');
-        const vehicleManufacturer = document.createElement('span');
         const vehicleLength = document.createElement('span');
         const vehicleCrew = document.createElement('span');
         const vehiclePassengers = document.createElement('span');
@@ -34,7 +33,6 @@ function renderData(vehicles){
         ul.append(li);
         li.appendChild(vehicleName);
         li.appendChild(vehicleModel);
-        li.appendChild(vehicleManufacturer);
         li.appendChild(vehicleLength);
         li.appendChild(vehicleCrew);
         li.appendChild(vehiclePassengers);
@@ -43,7 +41,6 @@ function renderData(vehicles){
         // making content
         vehicleName.textContent = vehicle.name;
         vehicleModel.textContent = vehicle.model;
-        vehicleManufacturer.textContent = vehicle.manufacturer;
         vehicleLength.textContent = vehicle.length;
         vehicleCrew.textContent = vehicle.crew;
         vehiclePassengers.textContent = vehicle.passengers;
@@ -53,8 +50,7 @@ function renderData(vehicles){
         li.classList.add('created__Li');
         vehicleName.classList.add('vehicle__Name');
         vehicleModel.classList.add('vehicle__Model');
-        vehicleManufacturer.classList.add('vehicle__Manufacturer');
-        vehicleLength.classList.add('vehicle__Size');
+        vehicleLength.classList.add('vehicle__Length');
         vehicleCrew.classList.add('vehicle__Crew');
         vehiclePassengers.classList.add('vehicle__Passengers');
         vehicleImage.classList.add('vehicle__Image');

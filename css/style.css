@@ -122,9 +122,8 @@ span {
 }
 
 .list__container{
-    display: flex;
     height: 2rem;
-    border: 0.125rem solid white;
+    border-radius: 0.125rem;
 }
 
 /* character content styles */
@@ -133,18 +132,17 @@ span {
     flex-basis: 25%;
 }
 
-.record__haircolor, .character__Hair-Color,
 .record__gender, .record__skincolor,
 .record__haircolor, .character__Hair-Color,
 .character__Gender, .character__Skin-Color{
     flex-basis: 13.3%;
 }
 
-.record__heigth, .character__Height{
+.record__heigth, .character__Height {
     flex-basis: 10%;
 }
 
-.record__picture, .character__Picture {
+.record__visuals, .character__Picture {
     flex-basis: 25%;
 }
 
@@ -156,58 +154,57 @@ span {
 
 .record__director, .movie__Director,
 .record__producer, .movie__Producer,
-.record__picture, .movie__Cover {
-    flex-basis: 20%;
+.record__release, .movie__Release-date {
+    flex-basis: 13.3%;
 }
 
-.record__release, .movie__Release-date {
+.record__episode, .movie__Episode {
     flex-basis: 10%;
 }
 
-.record__episode, .move__Episode {
-    flex-basis: 5%;
+.record__picture, .movie__Cover {
+    flex-basis: 25%;
 }
 
 /* planets styles */
 
 .record__planet, .planet__Name {
-    flex-basis: 20%;
+    flex-basis: 25%;
 }
 
 .record__climate, .planet__Climate,
 .record__terrain, .planet__Terrain,
 .record__diameter, .planet__Size {
-    flex-basis: 15%;
+    flex-basis: 13.3%;
 }
 
-.record__orbit, .planet__Orbit{
+.record__orbital, .planet__Orbit{
     flex-basis: 10%;
 }
 
-.record__rotation, .planet__Rotation {
-    flex-basis: 5%;
-}
 
 .record__picture, .planet__Image {
-    flex-basis: 20%;
+    flex-basis: 25%;
 }
 
 /* vehicles/starship styles */
 
-.record__name, .vehicle__Name,
-.record__manufacturer, .vehicle__Manufacturer {
-    flex-basis: 15%;
+.record__vehicles, .vehicle__Name{
+    flex-basis: 25%;
 }
 
 .record__model, .vehicle__Model,
 .record__length, .vehicle__Length,
-.record__crew, .vehicle__Crew,
 .record__passengers, .vehicle__Passengers {
+    flex-basis: 13.3%;
+}
+
+.record__crew, .vehicle__Crew {
     flex-basis: 10%;
 }
 
 .record__picture, .vehicle__Image {
-    flex-basis: 20%;
+    flex-basis: 25%;
 }
 
 /* created elements styles */

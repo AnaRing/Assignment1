@@ -16,7 +16,6 @@ function renderData(planets){
         // create elements
         const li = document.createElement('li'); 
         const planetName = document.createElement('span');
-        const planetRotation = document.createElement('span');
         const planetOrbit = document.createElement('span');
         const planetSize = document.createElement('span');
         const planetClimate = document.createElement('span');
@@ -27,7 +26,6 @@ function renderData(planets){
         // append elements
         ul.append(li);
         li.appendChild(planetName);
-        li.appendChild(planetRotation);
         li.appendChild(planetOrbit);
         li.appendChild(planetSize);
         li.appendChild(planetClimate);
@@ -36,7 +34,6 @@ function renderData(planets){
 
         // making content
         planetName.textContent = planet.name;
-        planetRotation.textContent = planet.rotation_period;
         planetOrbit.textContent = planet.orbital_period;
         planetSize.textContent = planet.diameter;
         planetClimate.textContent = planet.climate;
@@ -46,7 +43,6 @@ function renderData(planets){
         // adding classes to elements
         li.classList.add('created__Li');
         planetName.classList.add('planet__Name');
-        planetRotation.classList.add('planet__Rotation');
         planetOrbit.classList.add('planet__Orbit');
         planetSize.classList.add('planet__Size');
         planetClimate.classList.add('planet__Climate');

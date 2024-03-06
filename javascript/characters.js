@@ -28,7 +28,6 @@ function renderData(characters){
         li.appendChild(characterName);
         li.appendChild(characterGender);
         li.appendChild(characterHeight);
-        li.appendChild(characterHairColor);
         li.appendChild(characterSkinColor);
         li.appendChild(characterHairColor);
         li.appendChild(characterPicture);
@@ -37,7 +36,6 @@ function renderData(characters){
         characterName.textContent = character.name;
         characterGender.textContent = character.gender;
         characterHeight.textContent = character.height;
-        characterSkinColor.textContent = character.hair_color;
         characterSkinColor.textContent = character.skin_color;
         characterHairColor.textContent = character.hair_color;
         /* characterPicture.src =  */
