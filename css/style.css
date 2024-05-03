@@ -69,7 +69,7 @@ a:hover {
     margin-top: 1.25rem;
 }
 
-img {
+.image__container img {
     position: absolute;
     top: 0;
     left: 0;
@@ -142,8 +142,10 @@ span {
     flex-basis: 10%;
 }
 
-.record__visuals, .character__Picture {
+.record__visuals, .character__Image{
     flex-basis: 25%;
+    width: 2rem;
+    height: auto;
 }
 
 /* movies styles */

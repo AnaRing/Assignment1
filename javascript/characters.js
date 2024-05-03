@@ -11,7 +11,7 @@ function renderData(characters){
     const ul = document.querySelector('.main__container');
     document.body.appendChild(ul);
 
-    characters.forEach(character => {
+    characters.forEach((character, index) => {
         console.log(character);
         // create elements
         const li = document.createElement('li'); 
@@ -20,7 +20,6 @@ function renderData(characters){
         const characterHeight = document.createElement('span');
         const characterHairColor = document.createElement('span');
         const characterSkinColor = document.createElement('span');
-        const characterPicture = document.createElement('span');
         const characterImage = document.createElement('img');
 
         // append elements
@@ -30,7 +29,7 @@ function renderData(characters){
         li.appendChild(characterHeight);
         li.appendChild(characterSkinColor);
         li.appendChild(characterHairColor);
-        li.appendChild(characterPicture);
+        li.appendChild(characterImage);
 
         // making content
         characterName.textContent = character.name;
@@ -38,7 +37,10 @@ function renderData(characters){
         characterHeight.textContent = character.height;
         characterSkinColor.textContent = character.skin_color;
         characterHairColor.textContent = character.hair_color;
-        /* characterPicture.src =  */
+
+        // setting image source
+        characterImage.src = `../images/characters/${index}.jpg`;
+        console.log(characterImage.src);
 
         // adding classes to elements
         li.classList.add('created__Li');
@@ -47,7 +49,7 @@ function renderData(characters){
         characterHeight.classList.add('character__Height');
         characterHairColor.classList.add('character__Hair-Color');
         characterSkinColor.classList.add('character__Skin-Color');
-        characterPicture.classList.add('character__Picture');
+        characterImage.classList.add('character__Image');
 
     });
 }
