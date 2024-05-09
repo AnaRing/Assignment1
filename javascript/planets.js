@@ -11,7 +11,7 @@ function renderData(planets){
     const ul = document.querySelector('.main__container');
     document.body.appendChild(ul);
 
-    planets.forEach(planet => {
+    planets.forEach((planet, index) => {
         console.log(planet);
         // create elements
         const li = document.createElement('li'); 
@@ -20,7 +20,6 @@ function renderData(planets){
         const planetSize = document.createElement('span');
         const planetClimate = document.createElement('span');
         const planetTerrain = document.createElement('span');
-        const planetPicture = document.createElement('span');
         const planetImage = document.createElement('img');
 
         // append elements
@@ -30,7 +29,7 @@ function renderData(planets){
         li.appendChild(planetSize);
         li.appendChild(planetClimate);
         li.appendChild(planetTerrain);
-        li.appendChild(planetPicture);
+        li.appendChild(planetImage);
 
         // making content
         planetName.textContent = planet.name;
@@ -38,7 +37,10 @@ function renderData(planets){
         planetSize.textContent = planet.diameter;
         planetClimate.textContent = planet.climate;
         planetTerrain.textContent = planet.terrain;
-        /* planetImage.src =  */
+        
+         // setting image source
+         planetImage.src = `../images/planets/${index}.jpg`;
+         console.log(planetImage.src);
 
         // adding classes to elements
         li.classList.add('created__Li');
