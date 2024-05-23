@@ -17,7 +17,7 @@ function renderData(vehicles){
     const ul = document.querySelector('.main__container');
     document.body.appendChild(ul);
 
-    vehicles.forEach(vehicle => {
+    vehicles.forEach((vehicle, index) => {
         console.log(vehicle);
         // create elements
         const li = document.createElement('li'); 
@@ -26,7 +26,6 @@ function renderData(vehicles){
         const vehicleLength = document.createElement('span');
         const vehicleCrew = document.createElement('span');
         const vehiclePassengers = document.createElement('span');
-        const vehiclePicture = document.createElement('span');
         const vehicleImage = document.createElement('img');
 
         // append elements
@@ -36,7 +35,7 @@ function renderData(vehicles){
         li.appendChild(vehicleLength);
         li.appendChild(vehicleCrew);
         li.appendChild(vehiclePassengers);
-        li.appendChild(vehiclePicture);
+        li.appendChild(vehicleImage);
 
         // making content
         vehicleName.textContent = vehicle.name;
@@ -44,7 +43,10 @@ function renderData(vehicles){
         vehicleLength.textContent = vehicle.length;
         vehicleCrew.textContent = vehicle.crew;
         vehiclePassengers.textContent = vehicle.passengers;
-        /* vehicleImage.src =  */
+        
+        // setting image source
+        vehicleImage.src = `../images/vehicles/${index}.jpg`;
+        console.log(vehicleImage.src);
 
         // adding classes to elements
         li.classList.add('created__Li');

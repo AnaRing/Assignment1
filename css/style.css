@@ -165,6 +165,8 @@ span {
 }
 
 .record__picture, .movie__Cover {
+    width: 3.125rem;
+    height: 100%;
     flex-basis: 25%;
 }
 
@@ -208,6 +210,8 @@ span {
 }
 
 .record__picture, .vehicle__Image {
+    width: 3.125rem;
+    height: 100%;
     flex-basis: 25%;
 }
 
@@ -224,4 +228,66 @@ span {
     justify-content: center;
     text-align: center;
     margin: 0.0125rem;
+}
+
+
+/* responsive styles */
+@media screen and (max-width: 768px) {
+    .headline__top,
+    .headline__middle,
+    .headline__bottom {
+        font-size: 2rem;
+    }
+
+    a {
+        font-size: 1rem;
+        margin: 0.625rem 0.3125rem;
+    }
+
+    .info__box__container {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .list__container {
+        height: auto;
+    }
+
+    .record__header span,
+    .record__name, .character__Name,
+    .record__gender, .record__skincolor,
+    .record__haircolor, .character__Hair-Color,
+    .character__Gender, .character__Skin-Color,
+    .record__heigth, .character__Height,
+    .record__visuals, .character__Image,
+    .record__title, .movie__Title,
+    .record__director, .movie__Director,
+    .record__producer, .movie__Producer,
+    .record__release, .movie__Release-date,
+    .record__episode, .movie__Episode,
+    .record__picture, .movie__Cover,
+    .record__planet, .planet__Name,
+    .record__climate, .planet__Climate,
+    .record__terrain, .planet__Terrain,
+    .record__diameter, .planet__Size,
+    .record__orbital, .planet__Orbit,
+    .record__picture, .planet__Image,
+    .record__vehicles, .vehicle__Name,
+    .record__model, .vehicle__Model,
+    .record__length, .vehicle__Length, 
+    .record__passengers, .vehicle__Passengers,
+    .record__crew, .vehicle__Crew {
+        font-size: 0.8rem;
+    }
+
+    .record__visuals, .character__Image,
+    .record__picture, .movie__Cover,
+    .record__picture, .planet__Image,
+    .record__picture, .vehicle__Image {
+        width: 3rem;
+        height: auto;
+    }
 }

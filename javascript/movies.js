@@ -13,7 +13,7 @@ function renderData(movies){
     const ul = document.querySelector('.main__container');
     document.body.appendChild(ul);
 
-    movies.forEach(movie => {
+    movies.forEach((movie, index) => {
         console.log(movie);
         // create elements
         const li = document.createElement('li'); 
@@ -22,8 +22,8 @@ function renderData(movies){
         const movieDirector = document.createElement('span');
         const movieProducer = document.createElement('span');
         const movieRelease = document.createElement('span');
-        const movieCover = document.createElement('span');
-        const movieImage = document.createElement('img');
+        const movieCover = document.createElement('img');
+
 
         // append elements
         ul.append(li);
@@ -40,7 +40,10 @@ function renderData(movies){
         movieDirector.textContent = movie.director;
         movieProducer.textContent = movie.producer;
         movieRelease.textContent = movie.release_date;
-        /* movieCover.src =  */
+        
+        // setting image source
+        movieCover.src = `../images/movies/${index}.jpg`;
+        console.log(movieCover.src);
 
         // adding classes to elements
         li.classList.add('created__Li');
