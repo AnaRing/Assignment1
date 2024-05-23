@@ -248,6 +248,10 @@ span {
         height: auto;
     }
 
+    .info__box__text {
+        font-size: 0.8rem;
+    }
+
     h1 {
         font-size: 1.5rem;
     }
